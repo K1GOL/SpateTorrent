@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <link href="../styles.css" rel="stylesheet">
+    <title>Seed file(s)</title>
+  </head>
+  <body>
+    <!-- Draggable top bar -->
+    <div class="topBar">
+      <div class="draggableArea"></div>
+      <div class="windowControls">
+        <span class="windowControl" id="closeWindow">x</span>
+      </div>
+    </div>
+    <div class="mainContainer">
+      <div class="windowContainer" id="details">
+        <!-- Display details -->
+        <h1>$NAME</h1>
+        <p class="title">Info hash</p>
+        <p class="textLabel">$INFOHASH</p>
+        <p class="title">Magnet URI</p>
+        <p class="textLabel">$MAGNETURI</p>
+        <p class="title">.torrent file</p>
+        <span class="button" id="getTorrentFile-$INFOHASH">Get .torrent file</span>
+        <p class="title">Trackers</p>
+        <p class="textLabel">$ANNOUNCE</p>
+        <p class="title">Piece Length</p>
+        <p class="textLabel">$PIECELENGTH</p>
+        <p class="title">Total Length</p>
+        <p class="textLabel">$LENGTH</p>
+        <p class="title">Peers</p>
+        <p class="textLabel">$NUMPEERS</p>
+        <p class="title">Path</p>
+        <p class="textLabel">$PATH</p>
+      </div>
+    </div>
+  </body>
+</html>

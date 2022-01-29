@@ -1,0 +1,126 @@
+:root {
+  --topBarHeight: 30px;
+  --actionBarHeight: 60px;
+  --bottomBarHeight: 30px;
+  --inputURIWindowHeight: 180px;
+
+  font-family: Verdana;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.topBar {
+  width: 100%;
+  height: var(--topBarHeight);
+  background-color: darkgrey;
+}
+
+.draggableArea {
+  width: calc(100% - 100px);
+  height: 100%;
+  margin: 0;
+  float: left;
+  -webkit-app-region: drag;
+}
+
+.windowControls {
+  float: right;
+  width: 100px;
+  height: 100%;
+  margin: 0;
+}
+
+.windowControl {
+  margin: 3px;
+  padding: 3px;
+  border-radius: 3px;
+  float: right;
+  background-color: grey;
+}
+
+.mainContainer {
+  height: calc(100% - var(--topBarHeight));
+  width: 100%;
+}
+
+.listView {
+  height: calc(100% - var(--actionBarHeight) - var(--bottomBarHeight));
+  width: 100%;
+  padding: 5px;
+  overflow: auto;
+  background-color: lightgrey;
+}
+
+.listItemElement {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background-color: grey;
+}
+
+.inlineBlock {
+  display: inline-block;
+}
+
+.rightSide {
+  float: right;
+}
+
+.actionBar {
+  height: var(--actionBarHeight);
+  width: 100%;
+  background-color: grey;
+}
+
+.bottomBar {
+  height: var(--bottomBarHeight);
+  width: 100%;
+  background-color: grey;
+}
+
+.windowContainer {
+  height: 100%;
+  width: 100%;
+  padding: 5px;
+  background-color: grey;
+  overflow: auto;
+}
+
+.inputURI {
+  padding: 5px;
+  display: block;
+  margin-left: 5px;
+  width: 80%;
+}
+
+.textLabel {
+  margin: 5px;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.button {
+  min-width: 40px;
+  min-height: 20px;
+  text-align: center;
+  border-radius: 6px;
+  padding: 3px;
+  background-color: lightgrey;
+  display: inline-block;
+  margin: 5px;
+}
+
+.button:hover {
+  background-color: darkgrey;
+}
+
+.button:active {
+  background-color: grey;
+}

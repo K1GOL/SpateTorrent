@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <link href="../styles.css" rel="stylesheet">
+    <title>Hello World!</title>
+  </head>
+  <body>
+    <!-- Draggable top bar with close/minimize buttons -->
+    <div class="topBar">
+      <div class="draggableArea"></div>
+      <div class="windowControls">
+        <span class="windowControl" id="closeWindow">x</span>
+        <span class="windowControl" id="maximizeWindow">[]</span>
+        <span class="windowControl" id="minimizeWindow">-</span>
+      </div>
+    </div>
+    <div class="mainContainer">
+      <!-- Top row of buttons -->
+      <div class="actionBar">
+        <span class="button" id="addURI">Add torrent from URI</span>
+        <span class="button" id="addFile">Add .torrent file</span>
+        <span class="button" id="seedFiles">Seed files</span>
+      </div>
+      <!-- List view of added torrents -->
+      <div class="listView" id="listView">
+      </div>
+      <!-- Bottom status bar -->
+      <div class="bottomBar">
+      </div>
+    </div>
+  </body>
+</html>

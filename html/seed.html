@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <link href="../styles.css" rel="stylesheet">
+    <title>Seed file(s)</title>
+  </head>
+  <body>
+    <!-- Draggable top bar -->
+    <div class="topBar">
+      <div class="draggableArea"></div>
+      <div class="windowControls">
+        <span class="windowControl" id="closeWindow">x</span>
+      </div>
+    </div>
+    <div class="mainContainer">
+      <div class="windowContainer">
+        <!-- File seeding options -->
+        <h1>Seed file(s)</h1>
+        <p class="textLabel">File or folder to seed</p>
+        <input type="text" id="pathToSeed" class="textInput" readonly>
+        <span class="button" id="selectFile">Select file</span>
+        <span class="button" id="selectFolder">Select folder</span>
+        <p class="textLabel">Name</p>
+        <input type="text" id="torrentName" class="textInput">
+        <p class="textLabel">Custom trackers (seperated with semicolons)</p>
+        <input type="text" id="customTrackers" class="textInput">
+        <p class="textLabel">Private</p>
+        <input type="checkbox" id="seedPrivately" class="checkbox">
+        <br>
+        <!-- Confirm and cancel buttons -->
+        <span class="button" id="startSeeding">Start seeding</span>
+        <span class="button" id="cancel">Cancel</span>
+      </div>
+    </div>
+  </body>
+</html>

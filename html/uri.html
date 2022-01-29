@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <link href="../styles.css" rel="stylesheet">
+    <title>Add torrent from URI</title>
+  </head>
+  <body>
+    <!-- Draggable top bar -->
+    <div class="topBar">
+      <div class="windowControls">
+        <span class="windowControl" id="closeWindow">x</span>
+      </div>
+    </div>
+    <divc class="mainContainer">
+      <div class="windowContainer">
+        <p class="textLabel">Magnet URI, info hash, URL or path to torrent file.</p>
+        <!-- Text box for user to input URI -->
+        <input class="inputURI" id="inputURI"></input>
+        <br>
+        <!-- Confirm and cancel buttons -->
+        <span class="button" id="confirmURI">OK</span>
+        <span class="button" id="cancel">Cancel</span>
+      </div>
+    </div>
+  </body>
+</html>

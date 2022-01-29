@@ -1,0 +1,23 @@
+{
+  "name": "Spate",
+  "version": "0.1.0",
+  "description": "A simple webtorrent client.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/K1GOL/SpateTorrent",
+  "keywords": [
+    "Electron",
+    "torrent",
+    "webtorrent"
+  ],
+  "author": "K1GOL",
+  "license": "BSD 2-clause",
+  "devDependencies": {
+    "electron": "^15.3.0"
+  },
+  "dependencies": {
+    "webtorrent": "^1.5.8"
+  }
+}
