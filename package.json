@@ -18,6 +18,6 @@
     "electron": "^16.0.8"
   },
   "dependencies": {
-    "webtorrent": "^1.7.2"
+    "webtorrent": "^1.8.1"
   }
 }
