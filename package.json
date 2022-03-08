@@ -15,7 +15,7 @@
   "author": "K1GOL",
   "license": "BSD 2-clause",
   "devDependencies": {
-    "electron": "^17.0.1"
+    "electron": "^17.1.1"
   },
   "dependencies": {
     "webtorrent": "^1.8.5"
